@@ -1,12 +1,12 @@
 import React from "react";
 import Location from "./Location";
-import  {locations} from '../constants/constant'
+import { locations } from '../constants/constant'
 
 
 
 const DestinationList = () => {
-    console.log("Locations:", locations);
-    
+  console.log("Locations:", locations);
+
 
   return (
     <div className="w-full p-6 flex flex-col gap-6">
@@ -15,11 +15,8 @@ const DestinationList = () => {
         <h4 className="text-sm opacity-60">Day</h4>
       </section>
       <section className="locationList flex flex-col gap-3 w-full">
-        {
-            locations.map((location,index)=>(
-                <Location key={index} location={location} index={index} />
-            ))
-        }
+        <Location />
+
       </section>
     </div>
   );
