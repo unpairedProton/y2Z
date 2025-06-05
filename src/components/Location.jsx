@@ -6,8 +6,9 @@ import attachIcon from "../assets/icons/attach.png";
 import binIcon from "../assets/icons/bin.png";
 import editIcon from "../assets/icons/edit.png";
 import listIcon from "../assets/icons/list.png";
+import markerIcon from "../assets/icons/marker.png";
 
-const Location = ({location}) => {
+const Location = ({location,index}) => {
     // location = location.location; // Destructure to get the location object
     // console.log("Location:", location.rating.value, location.rating.count);
     
@@ -18,7 +19,11 @@ const Location = ({location}) => {
 
         <img className="w-5" src={listIcon} alt="" />
       </section>
-      <section className="locationImgSection w-36 rounded-xl ">
+      <section className="locationImgSection w-36 rounded-xl relative">
+        <div className='  absolute top-[30%] left-[-17%] w-9 h-9 ' >
+          <h6 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[72%] text-xs font-bold text-zinc-100" >{index+1}</h6>
+          <img className="w-full h-full"  src={markerIcon} alt="" />
+        </div>
         <img  className="rounded-lg object-cover object-center" src={location.image} alt="" />
       </section>
       <section className="locationInfoSection  gap-2 flex flex-col w-full p-2 ">

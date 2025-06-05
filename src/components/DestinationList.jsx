@@ -11,8 +11,8 @@ const DestinationList = () => {
   return (
     <div className="w-full p-6 flex flex-col gap-6">
       <section className="title flex flex-col gap-3">
-        <h1 className="text-2xl font-semibold">Itinerary</h1>
-        <h4 className="text-sm opacity-60">Day</h4>
+        <h1 className="text-2xl font-bold ">Itinerary</h1>
+        <h4 className="text-sm opacity-60  ">Day</h4>
       </section>
       <section className="locationList flex flex-col gap-3 w-full">
         {
